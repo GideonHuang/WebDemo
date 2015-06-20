@@ -85,3 +85,18 @@ function demo4()
 	sayColor.call(window);
 	sayColor.call(obj);
 }
+
+//program section for demo5
+function demo5()
+{
+    //使用Closure来模拟
+    (function(){
+        var now = new Date();
+        if (now.getMonth() == 5 && now.getDate() == 20){
+            alert("父亲节快乐！");
+        }
+        else{
+            alert(now.getMonth() + ":" + now.getDate());
+        }
+    })();
+}
